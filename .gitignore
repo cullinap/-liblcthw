@@ -1,4 +1,5 @@
-*.swp[o]
+*.swp
+*.swo
 tags/
 build/
 *.dSYM
