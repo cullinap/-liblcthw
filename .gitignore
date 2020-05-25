@@ -1,2 +1,4 @@
-*.swp
-*.swo
+*.swp[o]
+tags/
+build/
+*.dSYM
