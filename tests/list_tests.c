@@ -3,13 +3,14 @@
 #include <assert.h>
 
 static List *list = NULL;
+static List *list2 = NULL;
 char *test1 = "test1 data";
 char *test2 = "test2 data";
 char *test3 = "test3 data";
-char *test4 = "test4 data";
 
 char *test_create() {
         list = List_create();
+        list2 = List_create();
         mu_assert(list != NULL, "Failed to create list.");
 
         return NULL;
@@ -33,13 +34,7 @@ char *test_push_pop() {
         mu_assert(List_last(list) == test3, "Wrong last value.");
         mu_assert(List_count(list) == 3, "Wrong count on push.");
 
-        List_push(list, test4);
-        mu_assert(List_last(list) == test4, "Wrong last value.");
-        mu_assert(List_count(list) == 4, "Wrong count on push.");
-
         char *val = List_pop(list);
-        mu_assert(val == test4, "Wrong value on pop");
-
         mu_assert(val == test3, "Wrong value on pop");
 
         val = List_pop(list);
@@ -92,6 +87,39 @@ char *test_shift() {
         return NULL;
 }
 
+char *test_copy() {
+        
+        mu_assert(List_count(list2) == 0, "List2 should be empty");
+        
+        List_push(list2, test1);
+        List_push(list2, test2);
+        List_push(list2, test3);
+        mu_assert(List_count(list2) == 3, "Wrong count for list 2 after push");
+
+        List *copy_list = List_copy(list2);
+
+        mu_assert(List_first(list2) == List_first(copy_list), "first element of the list failed" );
+        mu_assert(List_last(list2) == List_last(copy_list), "last elemenet of the list failed" );
+
+        // Changing one element 
+        list2->first->value = "TESTING";
+        mu_assert(List_first(list2) != List_first(copy_list), "impropery copied");
+
+
+        return NULL;
+}
+
+char *test_join() {
+        mu_assert(List_count(list2) == 3, "wrong list count on start");
+
+        List *joined_list = List_join(list2, list2);
+        mu_assert(List_count(joined_list) == 6, "wrong list count after join");
+        mu_assert(List_first(list2) == List_first(joined_list), "first element of list2 does not match the joined list");       
+        mu_assert(List_count(joined_list) == List_count(list2) + List_count(list2), "joined list count is not equivalent list2 + list 2");
+
+        return NULL;
+}
+
 
 char *all_tests() {
         mu_suite_start();
@@ -102,6 +130,7 @@ char *all_tests() {
         mu_run_test(test_remove);
         mu_run_test(test_shift);
         mu_run_test(test_destroy);
+        mu_run_test(test_copy);
 
         return NULL;
 }

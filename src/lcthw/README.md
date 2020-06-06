@@ -1,3 +1,22 @@
+### Sorting Functions
+
+#### Double Linked List
+
+Fundamentally a double linked list composed of a node, pointers to the next node and previous node, and a store of value. 
+
+#### Double Linked List functions
+
+1. List_remove</br>
+
+2. List_pop
+
+3. List_push
+
+4. List_unshift
+
+5. List_shift
+
+
 
 List_remove
 

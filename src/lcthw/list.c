@@ -122,5 +122,49 @@ error:
     return result;
 }
 
+void *List_copy(List * list) {
+        List * copy_list = List_create();
+        
+        LIST_FOREACH(list, first, next, cur) {
+                List_push(copy_list, cur->value);
+        }
+        
+        return copy_list;
+}
+
+void *List_add(List * from_list, List * to_list) {
+        
+        LIST_FOREACH(from_list, first, next, cur) {
+                List_push(to_list, cur->value);
+        }
+
+        return NULL;
+}
+
+List *List_join(List * list1, List * list2) {
+        
+        List *joined_list = List_create();
+
+        List_add(list1, joined_list);
+        List_add(list2, joined_list);
+
+        return joined_list;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

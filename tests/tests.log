@@ -87,3 +87,277 @@ DEBUG tests/list_tests.c:99:
 DEBUG tests/list_tests.c:100: 
 ----- test_push_pop
 [ERROR] (tests/list_tests.c:43:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:119: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:109: 
+----- test_create
+DEBUG tests/list_tests.c:110: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:53:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_create
+DEBUG tests/list_tests.c:113: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:56:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_create
+DEBUG tests/list_tests.c:113: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:56:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:123: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_join
+DEBUG tests/list_tests.c:133: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:122: 
+----- test_join
+DEBUG tests/list_tests.c:133: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:122: 
+----- test_join
+DEBUG tests/list_tests.c:119: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:108: 
+----- test_join
+DEBUG tests/list_tests.c:119: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:108: 
+----- test_join
+DEBUG tests/list_tests.c:119: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:108: 
+----- test_join
+DEBUG tests/list_tests.c:119: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:109: 
+----- test_create
+DEBUG tests/list_tests.c:110: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:52:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:119: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:109: 
+----- test_create
+DEBUG tests/list_tests.c:110: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:52:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:120: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:109: 
+----- test_join
+DEBUG tests/list_tests.c:110: 
+----- test_create
+DEBUG tests/list_tests.c:111: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:53:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:120: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:109: 
+----- test_join
+DEBUG tests/list_tests.c:110: 
+----- test_create
+DEBUG tests/list_tests.c:111: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:53:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:120: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:109: 
+----- test_join
+DEBUG tests/list_tests.c:110: 
+----- test_create
+DEBUG tests/list_tests.c:111: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:53:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:111: 
+----- test_join
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:111: 
+----- test_join
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:111: 
+----- test_join
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:111: 
+----- test_join
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_join
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_join
+DEBUG tests/list_tests.c:125: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:114: 
+----- test_join
+DEBUG tests/list_tests.c:123: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_join
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_join
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_join
+DEBUG tests/list_tests.c:114: 
+----- test_create
+DEBUG tests/list_tests.c:115: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:57:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_join
+DEBUG tests/list_tests.c:114: 
+----- test_create
+DEBUG tests/list_tests.c:115: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:57:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_join
+DEBUG tests/list_tests.c:114: 
+----- test_create
+DEBUG tests/list_tests.c:115: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:57:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:126: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:115: 
+----- test_join
+DEBUG tests/list_tests.c:126: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:115: 
+----- test_join
+DEBUG tests/list_tests.c:126: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:115: 
+----- test_join
+DEBUG tests/list_tests.c:123: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_join
+DEBUG tests/list_tests.c:123: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_create
+DEBUG tests/list_tests.c:113: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:44:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:123: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:112: 
+----- test_create
+DEBUG tests/list_tests.c:113: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:44:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:124: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:113: 
+----- test_create
+DEBUG tests/list_tests.c:114: 
+----- test_push_pop
+[ERROR] (tests/list_tests.c:45:test_push_pop: errno: None) Wrong value on pop
+DEBUG tests/list_tests.c:117: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:106: 
+----- test_create
+DEBUG tests/list_tests.c:107: 
+----- test_push_pop
+DEBUG tests/list_tests.c:108: 
+----- test_unshift
+DEBUG tests/list_tests.c:109: 
+----- test_remove
+DEBUG tests/list_tests.c:110: 
+----- test_shift
+DEBUG tests/list_tests.c:111: 
+----- test_destroy
+DEBUG tests/list_tests.c:112: 
+----- test_copy
+DEBUG tests/list_tests.c:121: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:110: 
+----- test_create
+DEBUG tests/list_tests.c:111: 
+----- test_push_pop
+DEBUG tests/list_tests.c:112: 
+----- test_unshift
+DEBUG tests/list_tests.c:113: 
+----- test_remove
+DEBUG tests/list_tests.c:114: 
+----- test_shift
+DEBUG tests/list_tests.c:115: 
+----- test_destroy
+DEBUG tests/list_tests.c:116: 
+----- test_copy
+DEBUG tests/list_tests.c:121: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:110: 
+----- test_create
+DEBUG tests/list_tests.c:111: 
+----- test_push_pop
+DEBUG tests/list_tests.c:112: 
+----- test_unshift
+DEBUG tests/list_tests.c:113: 
+----- test_remove
+DEBUG tests/list_tests.c:114: 
+----- test_shift
+DEBUG tests/list_tests.c:115: 
+----- test_destroy
+DEBUG tests/list_tests.c:116: 
+----- test_copy
+[ERROR] (tests/list_tests.c:95:test_copy: errno: None) Wrong count for list 2 after push
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:111: 
+----- test_create
+DEBUG tests/list_tests.c:112: 
+----- test_push_pop
+DEBUG tests/list_tests.c:113: 
+----- test_unshift
+DEBUG tests/list_tests.c:114: 
+----- test_remove
+DEBUG tests/list_tests.c:115: 
+----- test_shift
+DEBUG tests/list_tests.c:116: 
+----- test_destroy
+DEBUG tests/list_tests.c:117: 
+----- test_copy
+DEBUG tests/list_tests.c:122: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:111: 
+----- test_create
+DEBUG tests/list_tests.c:112: 
+----- test_push_pop
+DEBUG tests/list_tests.c:113: 
+----- test_unshift
+DEBUG tests/list_tests.c:114: 
+----- test_remove
+DEBUG tests/list_tests.c:115: 
+----- test_shift
+DEBUG tests/list_tests.c:116: 
+----- test_destroy
+DEBUG tests/list_tests.c:117: 
+----- test_copy
+DEBUG tests/list_tests.c:136: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:125: 
+----- test_create
+DEBUG tests/list_tests.c:126: 
+----- test_push_pop
+DEBUG tests/list_tests.c:127: 
+----- test_unshift
+DEBUG tests/list_tests.c:128: 
+----- test_remove
+DEBUG tests/list_tests.c:129: 
+----- test_shift
+DEBUG tests/list_tests.c:130: 
+----- test_destroy
+DEBUG tests/list_tests.c:131: 
+----- test_copy
+DEBUG tests/list_tests.c:140: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:129: 
+----- test_create
+DEBUG tests/list_tests.c:130: 
+----- test_push_pop
+DEBUG tests/list_tests.c:131: 
+----- test_unshift
+DEBUG tests/list_tests.c:132: 
+----- test_remove
+DEBUG tests/list_tests.c:133: 
+----- test_shift
+DEBUG tests/list_tests.c:134: 
+----- test_destroy
+DEBUG tests/list_tests.c:135: 
+----- test_copy
+DEBUG tests/list_tests.c:144: ----- RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:133: 
+----- test_create
+DEBUG tests/list_tests.c:134: 
+----- test_push_pop
+DEBUG tests/list_tests.c:135: 
+----- test_unshift
+DEBUG tests/list_tests.c:136: 
+----- test_remove
+DEBUG tests/list_tests.c:137: 
+----- test_shift
+DEBUG tests/list_tests.c:138: 
+----- test_destroy
+DEBUG tests/list_tests.c:139: 
+----- test_copy
