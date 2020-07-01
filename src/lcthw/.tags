@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+LIST_FOREACH	list.h	/^#define LIST_FOREACH(/;"	d
+List	list.h	/^typedef struct List {$/;"	s
+List	list.h	/^} List;$/;"	t	typeref:struct:List
+ListNode	list.h	/^typedef struct ListNode {$/;"	s
+ListNode	list.h	/^} ListNode;$/;"	t	typeref:struct:ListNode
+ListNode_swap	list_algos.c	/^inline void ListNode_swap(ListNode * a, ListNode *b) {$/;"	f
+List_add	list.c	/^void *List_add(List * from_list, List * to_list) {$/;"	f
+List_bubble_sort	list_algos.c	/^int List_bubble_sort(List * list, List_compare cmp) {$/;"	f
+List_clear	list.c	/^void List_clear(List * list)$/;"	f
+List_clear_destroy	list.c	/^void List_clear_destroy(List * list)$/;"	f
+List_compare	list_algos.h	/^typedef int (*List_compare) (const void *a, const void *b);$/;"	t
+List_copy	list.c	/^void *List_copy(List * list) {$/;"	f
+List_count	list.h	/^#define List_count(/;"	d
+List_create	list.c	/^List *List_create()$/;"	f
+List_destroy	list.c	/^void List_destroy(List * list)$/;"	f
+List_first	list.h	/^#define List_first(/;"	d
+List_join	list.c	/^List *List_join(List * list1, List * list2) {$/;"	f
+List_last	list.h	/^#define List_last(/;"	d
+List_merge	list_algos.c	/^inline List *List_merge(List * left, List * right, List_compare cmp) {$/;"	f
+List_merge_sort	list_algos.c	/^List *List_merge_sort(List * list, List_compare cmp) {$/;"	f
+List_pop	list.c	/^void *List_pop(List * list)$/;"	f
+List_push	list.c	/^void List_push(List * list, void *value)$/;"	f
+List_remove	list.c	/^void *List_remove(List * list, ListNode * node)$/;"	f
+List_shift	list.c	/^void *List_shift(List * list)$/;"	f
+List_unshift	list.c	/^void List_unshift(List * list, void *value)$/;"	f
+__dbg_h__	dbg.h	/^#define __dbg_h__$/;"	d
+check	dbg.h	/^#define check(/;"	d
+check_debug	dbg.h	/^#define check_debug(/;"	d
+check_mem	dbg.h	/^#define check_mem(/;"	d
+clean_errno	dbg.h	/^#define clean_errno(/;"	d
+count	list.h	/^        int count;$/;"	m	struct:List
+debug	dbg.h	/^#define debug(/;"	d
+first	list.h	/^        ListNode *first;$/;"	m	struct:List
+last	list.h	/^        ListNode *last;$/;"	m	struct:List
+lcthw_List_algos_h	list_algos.h	/^#define lcthw_List_algos_h$/;"	d
+lcthw_List_h	list.h	/^#define lcthw_List_h$/;"	d
+log_err	dbg.h	/^#define log_err(/;"	d
+log_info	dbg.h	/^#define log_info(/;"	d
+log_warn	dbg.h	/^#define log_warn(/;"	d
+next	list.h	/^        struct ListNode *next;$/;"	m	struct:ListNode	typeref:struct:ListNode::ListNode
+prev	list.h	/^        struct ListNode *prev;$/;"	m	struct:ListNode	typeref:struct:ListNode::ListNode
+sentinel	dbg.h	/^#define sentinel(/;"	d
+value	list.h	/^        void *value;$/;"	m	struct:ListNode

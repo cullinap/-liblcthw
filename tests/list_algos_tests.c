@@ -2,6 +2,7 @@
 #include <lcthw/list_algos.h>
 #include <assert.h>
 #include <string.h>
+#include <math.h>
 
 char *values[] = { "XXXX", "1234", "abcd", "xjvef", "NDSS" };
 
@@ -56,21 +57,22 @@ char *test_bubble_sort() {
         return NULL;
 }
 
-char *test_merge_sort() {
+char *test_merge_sort()
+{
         List *words = create_words();
 
-        // should work on a list that needs sortgin
+        // should work on a list that needs sorting
         List *res = List_merge_sort(words, (List_compare) strcmp);
-        mu_assert(is_sorted(res), "Words are not sorted after merge sorting");
+        mu_assert(is_sorted(res), "Words are not sorted after merge sort.");
 
-        List *res2 = List_merge_sort(words, (List_compare) strcmp);
-        mu_assert(is_sorted(res), "Should still be sorted after merge sort");
+        List *res2 = List_merge_sort(res, (List_compare) strcmp);
+        mu_assert(is_sorted(res),
+                "Should still be sorted after merge sort.");
         List_destroy(res2);
         List_destroy(res);
-        
+
         List_destroy(words);
-        
-        return NULL;;
+        return NULL;
 }
 
 char *all_tests() {
