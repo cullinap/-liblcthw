@@ -18,21 +18,21 @@ char *test_create() {
         return NULL; 
 }
 
-char *test_destroy() {
-        DArray_destroy(array);
+// char *test_destroy() {
+//         DArray_destroy(array);
 
-        return NULL;
-}
+//         return NULL;
+// }
 
 char *test_new() {
 
-        val1 = DArray_new(array);
-        mu_assert(val1 != NULL; "failed to make a new element");
-        
-        val2 = DArray_new(array);
-        mu_assert(val2 != NULL; "failed to make a new element");
+     val1 = DArray_new(array);
+     mu_assert(val1 != NULL, "failed to make a new element");
 
-        return NULL;
+     val2 = DArray_new(array);
+     mu_assert(val2 != NULL, "failed to make a new element");
+
+     return NULL;
 }
 
 char *test_set() {
@@ -68,47 +68,55 @@ char *test_remove() {
         return NULL;
 }
 
-char *test_expand_contract() {
+// char *test_expand_contract() {
 
-        int old_max = array->max;
-        DArray_expand(array);
-        mu_assert((unsigned int)array->max == old_max + array->expand_rate, "Wrong size after expand");
-        DArray_contract(array);
-        mu_assert((unsigned int)array->max == array->expand_rate + 1, "Should stay at the expand rate at least");
+//         int old_max = array->max;
+//         DArray_expand(array);
+//         mu_assert((unsigned int)array->max == old_max + array->expand_rate, "Wrong size after expand");
+//         DArray_contract(array);
+//         mu_assert((unsigned int)array->max == array->expand_rate + 1, "Should stay at the expand rate at least");
 
-        DArray_contract(array);
-        mu_assert((unsigned int)array->max == array->expand_rate + 1, "Should stay at the expand rate at least");
+//         DArray_contract(array);
+//         mu_assert((unsigned int)array->max == array->expand_rate + 1, "Should stay at the expand rate at least");
 
-        return NULL;
-}
+//         return NULL;
+// }
 
-char test_push_pop() {
+// char *test_push_pop() {
 
-        int i = 0;
-        for (i = 0; i < 1000; i++) {
-                int *val = DArray_new(array);
-                *val = i * 333;
-                DArray_push(array, val);
-        }
+//         int i = 0;
+//         for (i = 0; i < 1000; i++) {
+//                 int *val = DArray_new(array);
+//                 *val = i * 333;
+//                 DArray_push(array, val);
+//         }
 
-        mu_assert(array->max == 1201, "Wrong max size.");
+//         mu_assert(array->max == 1201, "Wrong max size.");
 
-        for (i = 999; i >= 0, i--) {
-                int *val = DArray_pop(array);
-                mu_assert(val != NULL, "Should get a NULL.");
-                mu_assert(*val == i * 333, "Wrong value");
-                DArray_free(val);
-        }
+//         for (i = 999; i >= 0; i--) {
+//                 int *val = DArray_pop(array);
+//                 mu_assert(val != NULL, "Should get a NULL.");
+//                 mu_assert(*val == i * 333, "Wrong value");
+//                 DArray_free(val);
+//         }
 
-        return NULL;
-}
+//         return NULL;
+// }
 
 char *all_tests() {
 
         mu_suite_start();
 
         mu_run_test(test_create);
+        mu_run_test(test_new);
+        mu_run_test(test_set);
+        mu_run_test(test_get);
+        // mu_run_test(test_remove);
+
+        return NULL;
 }
+
+RUN_TESTS(all_tests);
 
 
 
